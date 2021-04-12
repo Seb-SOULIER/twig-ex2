@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Acceuil
+{% endblock %}
+
+{% block content %}
+    <h1>Hello Seb !</h1>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light headerbg">
+    <div class="collapse navbar-collapse myheader" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mynavbar">
+            <li class="nav-item">
+                <a class="navmenu" href="/Home/home.html.twig">Accueil</a>
+            </li>
+            <li class="nav-item">
+                <a class="navmenu" href="menu1.php">Menu 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="navmenu" href="menu2.php">Menu 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="navmenu" href="menu3.php">Menu 3</a>
+            </li>
+            <li class="nav-item navco">
+                <a class="navmenu" href="menu4.php">Menu 4</a>
+            </li>
+        </ul>
+    </div>
+</nav> 
+   
+{% endblock %}
