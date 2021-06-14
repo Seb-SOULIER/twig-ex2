@@ -35,5 +35,7 @@ abstract class AbstractController
             ]
         );
         $this->twig->addExtension(new DebugExtension());
+        $email = "soulier.sebastien.ss@gmail.com";
+        $this->twig->addGlobal('contactEmail', $email);
     }
 }

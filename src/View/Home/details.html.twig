@@ -1,0 +1,32 @@
+{% extends 'layout.html.twig' %}
+
+{% block title %}
+    {{ parent() }} - Details
+{% endblock %}
+
+{% block content %}
+    <h1>Hello Seb !</h1>
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light headerbg">
+        <div class="collapse navbar-collapse myheader" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mynavbar">
+                <li class="nav-item">
+                    <a class="navmenu" href="/Home/index">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navmenu" href="/Home/Details/index">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navmenu" href="menu2.php">On est sur une autre page avec le footer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navmenu" href="menu3.php">Et en variable globale :</a>
+                </li>
+                <li class="nav-item navco">
+                    <a class="navmenu" href="mailto:{{contactEmail}}">{{contactEmail}}</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+{% endblock %}
